@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Finanzas Personales</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Finanzas Personales</h1>
+        <a href="{{ url_for('deudas') }}" class="btn btn-primary">Deudas</a>
+        <a href="{{ url_for('ingresos') }}" class="btn btn-primary">Ingresos</a>
+        <a href="{{ url_for('historial') }}" class="btn btn-primary">Historial</a>
+    </div>
+</body>
+</html>
